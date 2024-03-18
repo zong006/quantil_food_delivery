@@ -13,7 +13,7 @@ where $L$ is the loss, $\hat{y}_i$ is the predicted value and $y_i$ is the true 
 In quantile regression however, the aim is to have a regression line such that for a given quantile $\tau$, the number of true values lying below the regression line is $100 \times \tau$%. This is achieved by fitting the regression line on the loss function
 
 $$
-L(\tau, y, \hat{y}) = \sum_{i} \max\{(\tau - 1)(y_i - \hat{y}_i), \tau(y_i - \hat{y}_i)\}.
+L(\tau, y, \hat{y}) = \sum_{i} \max\Big((\tau - 1)(y_i - \hat{y}_i), \tau(y_i - \hat{y}_i)\Big).
 $$
 
 As an example, the plot below shows three regression lines at quantiles $\tau = 0.1, 0.5, 0.9$. Roughly speaking, a regression line at 0.9 quantile aims to overestimate 90% of the time, and vice-versa for regression lines at other quantiles. It can be seen from the plot that the $\tau = 0.9$ line approximately divides the data points into 10% above the line, and 90% below it.
