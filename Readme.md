@@ -17,7 +17,7 @@ L(\tau, y, \hat{y}) = \sum_{i} \max\{(\tau - 1)(y_i - \hat{y}_i), \tau(y_i - \ha
 $$
 
 As an example, the plot below shows three regression lines at quantiles $\tau = 0.1, 0.5, 0.9$. Roughly speaking, a regression line at 0.9 quantile aims to overestimate 90% of the time, and vice-versa for regression lines at other quantiles. It can be seen from the plot that the $\tau = 0.9$ line approximately divides the data points into 10% above the line, and 90% below it.
-![Quantile Regression Example](quantil_eg.jpeg)
+![Quantile Regression Example](quantile_eg.jpeg)
 
 
 In the context of a food delivery service, we want to give an upper and lower bound of the estimated delivery time for the customer, giving us a prediction interval for the delivery time. Here, the quantiles of $\tau = 0.9$ and $\tau = 0.1$ are used, such that giving the upper and lower estimate for the delivery time, respectively.
