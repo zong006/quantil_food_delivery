@@ -13,11 +13,12 @@ where $L$ is the loss, $\hat{y}_i$ is the predicted value and $y_i$ is the true 
 In quantile regression however, the aim is to have a regression line such that for a given quantile $\tau$, the number of true values lying below the regression line is $100 \times \tau$%. This is achieved by fitting the regression line on the loss function
 
 $$
-L(\tau, y, \hat{y}) = \sum_{i} \max\{(\tau - 1)(y_i - \hat{y}_i), \tau(y_i - \hat{y}_i)\}\,.
+L(\tau, y, \hat{y}) = \sum_{i} \max\{(\tau - 1)(y_i - \hat{y}_i), \tau(y_i - \hat{y}_i)\}.
 $$
 
 As an example, the plot below shows three regression lines at quantiles $\tau = 0.1, 0.5, 0.9$. Roughly speaking, a regression line at 0.9 quantile aims to overestimate 90% of the time, and vice-versa for regression lines at other quantiles. It can be seen from the plot that the $\tau = 0.9$ line approximately divides the data points into 10% above the line, and 90% below it.
-<img src="quantile_eg.jpeg" alt="Example Image" width="700">
+![Quantile Regression Example](quantil_eg.jpeg)
+
 
 In the context of a food delivery service, we want to give an upper and lower bound of the estimated delivery time for the customer, giving us a prediction interval for the delivery time. Here, the quantiles of $\tau = 0.9$ and $\tau = 0.1$ are used, such that giving the upper and lower estimate for the delivery time, respectively.
 
