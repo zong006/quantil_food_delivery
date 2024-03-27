@@ -1,4 +1,6 @@
-The task here is to use quantile regression to predict and upper and lower estimates of delivery times for a food delivery service. 
+#### Summary
+
+A  quantile regression model to predict multiple quantiles, effectively providing accurate upper and lower estimates for food delivery timings given data on restaurant location, weather, and other pertinent factors.
 
 #### Quantile Regression for Food Delivery
 
